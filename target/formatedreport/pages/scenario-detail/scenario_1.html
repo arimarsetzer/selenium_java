@@ -16,13 +16,13 @@
     -->
 <html lang="en">
  <head>
-  <base href="./../..">  
+  <base href="../..">  
   <meta charset="utf-8"> 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-  <meta name="description" content="Cluecumber Report Plugin [1.2.0] - Scenario Summary"> 
+  <meta name="description" content="Cluecumber Report Plugin [1.2.0] - Scenario Details"> 
   <meta name="author" content="Cluecumber Report Plugin [1.2.0]"> 
-  <title>Scenario Summary - 2023/02/10 13:52:05</title> 
+  <title>Scenario Details - 2023/02/10 13:52:06</title> 
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link href="css/cluecumber.css" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="css/datatables.min.css"> 
@@ -31,7 +31,7 @@
  </head> 
  <body> 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
-   <span class="navbar-brand">Scenario Summary</span> 
+   <span class="navbar-brand">Scenario Details</span> 
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
     <ul class="navbar-nav mr-auto"> 
@@ -39,14 +39,19 @@
      <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
      <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
     </ul> 
-    <span class="text-light">2023/02/10 13:52:05</span> 
+    <span class="text-light">2023/02/10 13:52:06</span> 
    </div> 
   </nav> 
   <main role="main" class="container"> 
    <div class="cluecumber-template"> 
     <div class="pb-2 mt-4 mb-2 border-bottom"> 
-     <h3>Scenarios in Feature 'Usuário quer comprar 2 produtos para se vestir melhor'</h3> 
+     <h3>Scenario 'Criar novo cadastro no ecommerce'</h3> 
     </div> 
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = (obj.contentWindow.document.body.scrollHeight + 20) + 'px';
+        }
+    </script> 
     <div class="row"> 
      <div class="col-sm-8"> 
       <div class="card h-100"> 
@@ -63,55 +68,92 @@
      <div class="col-sm-4"> 
       <div class="card h-100"> 
        <div class="card-header">
-        Scenario Summary
+        Scenario Information
        </div> 
        <div class="card-body"> 
         <ul class="list-group list-group-flush"> 
-         <li class="list-group-item"><strong>1</strong> Scenario(s)</li> 
-         <li class="list-group-item"><strong>1</strong> passed</li> 
+         <li class="list-group-item"><strong>3</strong> Step(s)</li> 
+         <li class="list-group-item"><strong>3</strong> passed</li> 
          <li class="list-group-item"><strong>0</strong> failed</li> 
          <li class="list-group-item"><strong>0</strong> skipped</li> 
-         <li class="list-group-item"><strong>Time:</strong> 0m 27s 674ms</li> 
+         <li class="list-group-item"><strong>Time:</strong> 0m 06s 610ms</li> 
+         <li class="list-group-item"> <a href="pages/tag-scenarios/tag_enrollnewuser.html">@enrollnewuser</a> </li> 
         </ul> 
        </div> 
       </div> 
      </div> 
     </div> 
-    <div class="row" id="card_passed"> 
+    <ul class="list-group list-group-flush"> 
      <div class="col-sm-12"> 
-      <div class="card"> 
-       <div class="card-header border-success bg-success text-white">
-        Passed Scenarios
+      <div class="card h-100"> 
+       <div class="card-header">
+        Steps
        </div> 
        <div class="card-body"> 
-        <table id="results_passed" class="table table-hover renderAsDataTable"> 
-         <thead> 
-          <tr> 
-           <th class="text-left">Feature</th> 
-           <th class="text-left">Scenario</th> 
-           <th>Duration</th> 
-          </tr> 
-         </thead> 
-         <tbody> 
-          <tr> 
-           <td class="text-left"><span data-toggle="tooltip" title="buy2products.feature"><a href="pages/feature-scenarios/feature_0.html">Usuário quer comprar 2 produtos para se vestir melhor</a></span> </td> 
-           <td class="text-left"> <a href="pages/scenario-detail/scenario_0.html">Comprar 2 produtos com sucesso</a> </td> 
-           <td class="text-right" data-order="27,674,953,700"> 
-            <nobr>
-             0m 27s 674ms
-            </nobr> </td> 
-          </tr> 
-         </tbody> 
-        </table> 
+        <li class="list-group-item"> 
+         <div class="row row_passed"> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            Step 1
+           </nobr> 
+          </div> 
+          <div class="col-6 text-left"> 
+           <span data-toggle="tooltip" title="EnrollNewUserStep.commerceHomePage()"> Given Estou na pagina inicial do ecommerce e clico no botao de cadastro </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 00s 903ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            Step 2
+           </nobr> 
+          </div> 
+          <div class="col-6 text-left"> 
+           <span data-toggle="tooltip" title="EnrollNewUserStep.fillEnrollFirstStep()"> When Insiro meu nome, email e clico em registrar </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 01s 464ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            Step 3
+           </nobr> 
+          </div> 
+          <div class="col-6 text-left"> 
+           <span data-toggle="tooltip" title="EnrollNewUserStep.fillEnrollSecondStepandFinish()"> Then Adiciono as informacoes restantes e clico em criar conta </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 04s 242ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> </li> 
        </div> 
       </div> 
      </div> 
-    </div> 
+    </ul> 
    </div> 
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
    <div class="container-fluid"> 
-    <span class="text-muted">Generated by Cluecumber Report Plugin [1.2.0], 2023/02/10 13:52:05.</span> 
+    <span class="text-muted">Generated by Cluecumber Report Plugin [1.2.0], 2023/02/10 13:52:06.</span> 
    </div> 
   </footer> 
   <script src="js/jquery.min.js"></script> 
@@ -143,26 +185,88 @@
             var chart = new Chart(ctx, eval({
   "data": {
     "labels": [
-      "passed",
-      "failed",
-      "skipped"
+      "Step 1",
+      "Step 2",
+      "Step 3"
     ],
     "datasets": [
       {
         "data": [
-          1,
+          903,
+          1464,
+          4242
+        ],
+        "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)"
+        ],
+        "label": "passed",
+        "stack": "complete"
+      },
+      {
+        "data": [
+          0,
           0,
           0
         ],
         "backgroundColor": [
-          "rgba(40, 167, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)"
+        ],
+        "label": "failed",
+        "stack": "complete"
+      },
+      {
+        "data": [
+          0,
+          0,
+          0
+        ],
+        "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)"
-        ]
+        ],
+        "label": "skipped",
+        "stack": "complete"
       }
     ]
   },
-  "type": "pie"
+  "options": {
+    "scales": {
+      "xAxes": [
+        {
+          "ticks": {
+            "min": 0,
+            "display": true
+          },
+          "stacked": true,
+          "scaleLabel": {
+            "display": true,
+            "labelString": "Step(s)"
+          },
+          "stepSize": 0.0
+        }
+      ],
+      "yAxes": [
+        {
+          "ticks": {
+            "min": 0,
+            "display": true
+          },
+          "stacked": true,
+          "scaleLabel": {
+            "display": true,
+            "labelString": "Step Runtime"
+          },
+          "stepSize": 0.0
+        }
+      ]
+    }
+  },
+  "type": "bar"
 }));
 
             var original;

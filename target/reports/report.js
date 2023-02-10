@@ -51,21 +51,21 @@ formatter.match({
   "location": "Buy2ProductsStep.loggedIntoECommerce()"
 });
 formatter.result({
-  "duration": 7978778000,
+  "duration": 9909648600,
   "status": "passed"
 });
 formatter.match({
   "location": "Buy2ProductsStep.addTwoProducts()"
 });
 formatter.result({
-  "duration": 7740286400,
+  "duration": 7836910200,
   "status": "passed"
 });
 formatter.match({
   "location": "Buy2ProductsStep.endCommerceProcess()"
 });
 formatter.result({
-  "duration": 8984610000,
+  "duration": 9928394900,
   "status": "passed"
 });
 formatter.uri("enrollnewuser.feature");
@@ -121,21 +121,21 @@ formatter.match({
   "location": "EnrollNewUserStep.commerceHomePage()"
 });
 formatter.result({
-  "duration": 910859700,
+  "duration": 903528300,
   "status": "passed"
 });
 formatter.match({
   "location": "EnrollNewUserStep.fillEnrollFirstStep()"
 });
 formatter.result({
-  "duration": 1253563800,
+  "duration": 1464394700,
   "status": "passed"
 });
 formatter.match({
   "location": "EnrollNewUserStep.fillEnrollSecondStepandFinish()"
 });
 formatter.result({
-  "duration": 4104998400,
+  "duration": 4242788000,
   "status": "passed"
 });
 });

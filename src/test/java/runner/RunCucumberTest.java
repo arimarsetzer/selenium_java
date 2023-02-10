@@ -28,6 +28,7 @@ public class RunCucumberTest {
 
         ChromeOptions options = new ChromeOptions();
         options.addExtensions(new File("C:/cursos/DesafioDatum/adblock_5_4_0_0.crx"));
+        //options.addArguments("--headless", "--window-size=1440,900");
         DesiredCapabilities c = new DesiredCapabilities();
         c.setCapability(ChromeOptions.CAPABILITY, options);
 
@@ -39,7 +40,7 @@ public class RunCucumberTest {
 
     @AfterClass
     public static void stop() {
-        //driver.quit();
+        driver.quit();
     }
 
 }

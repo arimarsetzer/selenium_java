@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c522ba3a-7916-4973-b5f6-06009fe4e439" name="Changes" comment="" />
+    <list default="true" id="c522ba3a-7916-4973-b5f6-06009fe4e439" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/cucumberReport.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/cucumberReport.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/report.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,17 +173,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'main' of github.com:arimarsetzer/selenium_java&#10;&#10;# Conflicts:&#10;#&#9;README.md" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'main' of github.com:arimarsetzer/selenium_java&#10;&#10;# Conflicts:&#10;#&#9;README.md" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/runner/RunCucumberTest.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DesafioDatumSelenium$RunCucumberTest.ic" NAME="RunCucumberTest Coverage Results" MODIFIED="1675975719647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
