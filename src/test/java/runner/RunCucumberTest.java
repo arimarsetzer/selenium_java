@@ -27,7 +27,7 @@ public class RunCucumberTest {
     public static void start() {
 
         ChromeOptions options = new ChromeOptions();
-        options.addExtensions(new File("selenium_java/adblock_5_4_0_0.crx"));
+        options.addExtensions(new File("/adblock_5_4_0_0.crx"));
         //options.addArguments("--headless", "--window-size=1440,900");
         DesiredCapabilities c = new DesiredCapabilities();
         c.setCapability(ChromeOptions.CAPABILITY, options);
