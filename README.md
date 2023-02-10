@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Datum Challenge with Selenium
 
 Projeto básico de automação de testes web, com Selenium WebDriver na linguagem Java.
@@ -34,6 +33,3 @@ Projeto básico de automação de testes web, com Selenium WebDriver na linguage
 - pages: Where all main functions will be stored to be reused
 - support: Where specific functions will be stored to be reused
 =======
-# selenium_java
-Challenge using Selenium Webdriver with Java language
->>>>>>> 5cd261f4cd2984cb1a828bdd5dc1fe9815df53f4
