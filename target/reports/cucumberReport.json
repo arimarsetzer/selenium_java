@@ -1,0 +1,150 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: en"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Comprar 2 produtos com sucesso",
+        "description": "",
+        "id": "usuário-quer-comprar-2-produtos-para-se-vestir-melhor;comprar-2-produtos-com-sucesso",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7978778000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Estou logado na pagina do ecommerce",
+            "match": {
+              "location": "Buy2ProductsStep.loggedIntoECommerce()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7740286400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Eu adiciono dois produtos ao carrinho",
+            "match": {
+              "location": "Buy2ProductsStep.addTwoProducts()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8984610000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Finalizo minha compra com sucesso",
+            "match": {
+              "location": "Buy2ProductsStep.endCommerceProcess()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@buy2products"
+          }
+        ]
+      }
+    ],
+    "name": "Usuário quer comprar 2 produtos para se vestir melhor",
+    "description": "",
+    "id": "usuário-quer-comprar-2-produtos-para-se-vestir-melhor",
+    "keyword": "Business Need",
+    "uri": "buy2products.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@buy2products"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: en"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Criar novo cadastro no ecommerce",
+        "description": "",
+        "id": "usuário-quer-criar-novo-cadastro-no-ecommerce;criar-novo-cadastro-no-ecommerce",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 910859700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Estou na pagina inicial do ecommerce e clico no botao de cadastro",
+            "match": {
+              "location": "EnrollNewUserStep.commerceHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1253563800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Insiro meu nome, email e clico em registrar",
+            "match": {
+              "location": "EnrollNewUserStep.fillEnrollFirstStep()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4104998400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Adiciono as informacoes restantes e clico em criar conta",
+            "match": {
+              "location": "EnrollNewUserStep.fillEnrollSecondStepandFinish()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@enrollnewuser"
+          }
+        ]
+      }
+    ],
+    "name": "Usuário quer criar novo cadastro no ecommerce",
+    "description": "",
+    "id": "usuário-quer-criar-novo-cadastro-no-ecommerce",
+    "keyword": "Business Need",
+    "uri": "enrollnewuser.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@enrollnewcustomer"
+      }
+    ]
+  }
+]
