@@ -1,11 +1,10 @@
 package pages;
 
 import org.openqa.selenium.By;
-import runner.RunCucumberTest;
 import support.Utils;
 import org.openqa.selenium.support.ui.Select;
 
-public class EnrollnewUserPage extends RunCucumberTest {
+public class EnrollnewUserPage extends Utils {
 
     public void enrollFirstStep(){
         driver.findElement(By.cssSelector("input[data-qa='signup-name']")).sendKeys(Utils.getRandomName());

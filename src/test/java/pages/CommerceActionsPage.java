@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import support.Utils;
-import static org.junit.Assert.assertTrue;
 
 public class CommerceActionsPage extends Utils {
 

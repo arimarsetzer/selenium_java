@@ -28,7 +28,8 @@ public class RunCucumberTest {
 
         ChromeOptions options = new ChromeOptions();
         options.addExtensions(new File("/home/runner/work/selenium_java/selenium_java/adblock_5_4_0_0.crx"));
-        //options.addArguments("--headless", "--window-size=1440,900");
+        //options.addArguments("--headless");
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         DesiredCapabilities c = new DesiredCapabilities();
         c.setCapability(ChromeOptions.CAPABILITY, options);
 
