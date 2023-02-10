@@ -3,8 +3,8 @@ package steps;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import steps.pages.CommerceActionsPage;
-import steps.pages.HomePage;
+import pages.CommerceActionsPage;
+import pages.HomePage;
 import runner.RunCucumberTest;
 
 public class Buy2ProductsStep extends RunCucumberTest {

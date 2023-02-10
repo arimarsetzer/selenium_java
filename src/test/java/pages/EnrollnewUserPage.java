@@ -1,4 +1,4 @@
-package steps.pages;
+package pages;
 
 import org.openqa.selenium.By;
 import runner.RunCucumberTest;
