@@ -14,8 +14,7 @@ public class Buy2ProductsStep extends RunCucumberTest {
 
     @Given("^Estou logado na pagina do ecommerce$")
     public void loggedIntoECommerce() throws InterruptedException {
-        homePage.enterLoginPage();
-        homePage.loginApp();
+        homePage.accessApp();
     }
 
     @When("^Eu adiciono dois produtos ao carrinho$")

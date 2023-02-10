@@ -13,6 +13,7 @@ public class HomePage {
 
     public void accessApp() {
         driver.get("https://automationexercise.com/");
+        driver.findElement(By.cssSelector(".nav a[href='/']")).getText().equals("Home");
     }
 
     public void enterLoginPage() {
