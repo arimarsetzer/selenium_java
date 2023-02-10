@@ -32,4 +32,10 @@ Projeto básico de automação de testes web, com Selenium WebDriver na linguage
 - runner: Create runner with Cucumber options, Before and After each, and test report path
 - pages: Where all main functions will be stored to be reused
 - support: Where specific functions will be stored to be reused
-=======
+
+#Test Case structure flow
+
+- Enroll New User > Adding more information needed for the new user > Assert new user message
+  - New user is dynamic created with Random functions presents on Utils.javaclass (Random email and name for each new user)
+- Go HomePage > Add all 3 required products to the cart > Enter cart and Assert quantity of the products added
+- Enter Checkout > Add Payment Method > Place Order > Assert Order Placed message

@@ -7,7 +7,7 @@ import pages.CommerceActionsPage;
 import pages.HomePage;
 import runner.RunCucumberTest;
 
-public class Buy2ProductsStep extends RunCucumberTest {
+public class Buy3ProductsStep extends RunCucumberTest {
 
     HomePage homePage = new HomePage(driver);
     CommerceActionsPage commerce = new CommerceActionsPage(driver);
@@ -17,13 +17,16 @@ public class Buy2ProductsStep extends RunCucumberTest {
         homePage.accessApp();
     }
 
-    @When("^Eu adiciono dois produtos ao carrinho$")
-    public void addTwoProducts() throws InterruptedException {
+    @When("^Eu adiciono tres produtos ao carrinho$")
+    public void addThreeProducts() throws InterruptedException {
 
         commerce.addFirstProductToCart();
         commerce.continueShoppingModal();
         homePage.accessApp();
         commerce.addSecondProductToCart();
+        commerce.continueShoppingModal();
+        homePage.accessApp();
+        commerce.addThirdProductToCart();
         commerce.viewCartOnModal();
     }
 

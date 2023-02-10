@@ -18,7 +18,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8130363900,
+              "duration": 3241123600,
               "status": "passed"
             },
             "line": 8,
@@ -30,7 +30,7 @@
           },
           {
             "result": {
-              "duration": 5393976300,
+              "duration": 1804583500,
               "status": "passed"
             },
             "line": 9,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 8066133400,
+              "duration": 4913551700,
               "status": "passed"
             },
             "line": 10,
@@ -62,45 +62,45 @@
       },
       {
         "line": 13,
-        "name": "Comprar 2 produtos com sucesso",
+        "name": "Comprar 3 produtos com sucesso",
         "description": "",
-        "id": "usuário-quer-criar-novo-cadastro-no-ecommerce-e-comprar-produtos;comprar-2-produtos-com-sucesso",
+        "id": "usuário-quer-criar-novo-cadastro-no-ecommerce-e-comprar-produtos;comprar-3-produtos-com-sucesso",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4760104200,
+              "duration": 5260000100,
               "status": "passed"
             },
             "line": 14,
             "name": "Estou logado na pagina do ecommerce",
             "match": {
-              "location": "Buy2ProductsStep.loggedIntoECommerce()"
+              "location": "Buy3ProductsStep.loggedIntoECommerce()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 11720014000,
+              "duration": 20201362200,
               "status": "passed"
             },
             "line": 15,
-            "name": "Eu adiciono dois produtos ao carrinho",
+            "name": "Eu adiciono tres produtos ao carrinho",
             "match": {
-              "location": "Buy2ProductsStep.addTwoProducts()"
+              "location": "Buy3ProductsStep.addThreeProducts()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 7960002300,
+              "duration": 10581385200,
               "status": "passed"
             },
             "line": 16,
             "name": "Finalizo minha compra com sucesso",
             "match": {
-              "location": "Buy2ProductsStep.endCommerceProcess()"
+              "location": "Buy3ProductsStep.endCommerceProcess()"
             },
             "keyword": "Then "
           }

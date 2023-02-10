@@ -10,7 +10,7 @@
       Then Adiciono as informacoes restantes e clico em criar conta
 
     @buy2products
-    Scenario: Comprar 2 produtos com sucesso
+    Scenario: Comprar 3 produtos com sucesso
       Given Estou logado na pagina do ecommerce
-      When Eu adiciono dois produtos ao carrinho
+      When Eu adiciono tres produtos ao carrinho
       Then Finalizo minha compra com sucesso

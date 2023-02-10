@@ -51,28 +51,28 @@ formatter.match({
   "location": "EnrollNewUserStep.commerceHomePage()"
 });
 formatter.result({
-  "duration": 8130363900,
+  "duration": 3241123600,
   "status": "passed"
 });
 formatter.match({
   "location": "EnrollNewUserStep.fillEnrollFirstStep()"
 });
 formatter.result({
-  "duration": 5393976300,
+  "duration": 1804583500,
   "status": "passed"
 });
 formatter.match({
   "location": "EnrollNewUserStep.fillEnrollSecondStepandFinish()"
 });
 formatter.result({
-  "duration": 8066133400,
+  "duration": 4913551700,
   "status": "passed"
 });
 formatter.scenario({
   "line": 13,
-  "name": "Comprar 2 produtos com sucesso",
+  "name": "Comprar 3 produtos com sucesso",
   "description": "",
-  "id": "usuário-quer-criar-novo-cadastro-no-ecommerce-e-comprar-produtos;comprar-2-produtos-com-sucesso",
+  "id": "usuário-quer-criar-novo-cadastro-no-ecommerce-e-comprar-produtos;comprar-3-produtos-com-sucesso",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -89,7 +89,7 @@ formatter.step({
 });
 formatter.step({
   "line": 15,
-  "name": "Eu adiciono dois produtos ao carrinho",
+  "name": "Eu adiciono tres produtos ao carrinho",
   "keyword": "When "
 });
 formatter.step({
@@ -98,24 +98,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Buy2ProductsStep.loggedIntoECommerce()"
+  "location": "Buy3ProductsStep.loggedIntoECommerce()"
 });
 formatter.result({
-  "duration": 4760104200,
+  "duration": 5260000100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Buy2ProductsStep.addTwoProducts()"
+  "location": "Buy3ProductsStep.addThreeProducts()"
 });
 formatter.result({
-  "duration": 11720014000,
+  "duration": 20201362200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Buy2ProductsStep.endCommerceProcess()"
+  "location": "Buy3ProductsStep.endCommerceProcess()"
 });
 formatter.result({
-  "duration": 7960002300,
+  "duration": 10581385200,
   "status": "passed"
 });
 });

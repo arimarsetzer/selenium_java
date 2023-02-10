@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import support.Utils;
+import static org.junit.Assert.assertTrue;
 
 public class CommerceActionsPage extends Utils {
 
@@ -16,31 +17,50 @@ public class CommerceActionsPage extends Utils {
     }
 
     public void addFirstProductToCart() throws InterruptedException {
-        WebElement productdetail_01 = driver.findElement(By.cssSelector("a[href='/product_details/1']"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", productdetail_01);
+        WebElement productdetail_04 = driver.findElement(By.cssSelector("a[href='/product_details/4']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", productdetail_04);
         Thread.sleep(500);
-        driver.findElement(By.cssSelector("a[href='/product_details/1']")).click();
+        driver.findElement(By.cssSelector("a[href='/product_details/4']")).click();
+        driver.findElement(By.id("quantity")).clear();
+        driver.findElement(By.id("quantity")).sendKeys("3");
+        driver.findElement(By.cssSelector("button[class='btn btn-default cart']")).click();
     }
 
     public void continueShoppingModal() {
-        driver.findElement(By.cssSelector("button[class='btn btn-default cart']")).click();
         waitElementBeVisible(By.className("modal-content"), 5);
         WebElement modalAcceptButton = driver.findElement(By.cssSelector("button[class='btn btn-success close-modal btn-block']"));
         modalAcceptButton.click();
     }
 
     public void addSecondProductToCart() throws InterruptedException {
-        WebElement productdetail_02 = driver.findElement(By.cssSelector("a[href='/product_details/2']"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", productdetail_02);
+        WebElement productdetail_41 = driver.findElement(By.cssSelector("a[href='/product_details/41']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", productdetail_41);
+        Thread.sleep(500);
+        driver.findElement(By.cssSelector("a[href='/product_details/41']")).click();
+        driver.findElement(By.id("quantity")).clear();
+        driver.findElement(By.id("quantity")).sendKeys("2");
+        driver.findElement(By.cssSelector("button[class='btn btn-default cart']")).click();
+    }
+
+    public void addThirdProductToCart() throws InterruptedException {
+        WebElement productdetail_2 = driver.findElement(By.cssSelector("a[href='/product_details/2']"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", productdetail_2);
         Thread.sleep(500);
         driver.findElement(By.cssSelector("a[href='/product_details/2']")).click();
+        driver.findElement(By.cssSelector("button[class='btn btn-default cart']")).click();
     }
 
     public void viewCartOnModal() {
-        driver.findElement(By.cssSelector("button[class='btn btn-default cart']")).click();
         w.until(ExpectedConditions.visibilityOfElementLocated(By.className("modal-content")));
         WebElement modalAcceptButton2 = driver.findElement(By.cssSelector(".text-center a[href='/view_cart']"));
         modalAcceptButton2.click();
+
+        WebElement product4 = driver.findElement(By.cssSelector("#product-4 [class='disabled']"));
+        product4.getText().equals("3");
+        WebElement product41 = driver.findElement(By.cssSelector("#product-41 [class='disabled']"));
+        product41.getText().equals("2");
+        WebElement product1 = driver.findElement(By.cssSelector("#product-2 [class='disabled']"));
+        product1.getText().equals("1");
     }
 
     public void enterCheckout() {
